@@ -1,5 +1,5 @@
 <script lang="ts">
-    import AddTodo from "./AddTodo.svelte";
+    import AddTodo from "./components/AddTodo.svelte";
 </script>
 
 <div class="h-screen bg-gradient-to-tr from-neutral-900 to-orange-900 flex flex-col items-center py-5">

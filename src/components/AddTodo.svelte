@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { tasks } from "./taskStore";
+    import { tasks } from "../store/taskStore";
 
     let task = "";
 
