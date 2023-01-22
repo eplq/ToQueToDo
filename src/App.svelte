@@ -1,1 +1,1 @@
-<h1>preparado</h1>
+<h1 class="text-9xl">preparado</h1>
