@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { fly } from "svelte/transition";
     import { tasks } from "../store/taskStore";
 
     export let task: string;
@@ -19,7 +20,7 @@
     }
 </script>
 
-<div class="text-neutral-200 text-lg border-b mt-2 flex items-center justify-between px-4 pb-2">
+<div transition:fly={{ y: -100, duration: 250 }} class="text-neutral-200 text-lg border-b mt-2 flex items-center justify-between px-4 pb-2">
     <span class:done class="flex-grow">{index + 1}. {task}</span>
     <button class="mr-10 border rounded-full h-8 aspect-square hover:bg-red-800 hover:border-red-800 active:opacity-50" on:click={remove}>&cross;</button>
     <input bind:checked={done} on:change={update} type="checkbox">

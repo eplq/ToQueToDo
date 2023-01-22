@@ -12,6 +12,8 @@
                     done: false,
                 },
             ]);
+
+        task = ""
     }
 </script>
 
