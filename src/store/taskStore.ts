@@ -5,4 +5,6 @@ type Task = {
     done: boolean
 }
 
-export const tasks = writable<Task[]>([]);
+export const tasks = writable<Task[]>(JSON.parse(localStorage.getItem('tasks') || "[]"));
+
+tasks.subscribe(tasks => localStorage.setItem('tasks', JSON.stringify(tasks)))
