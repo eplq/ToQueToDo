@@ -5,8 +5,8 @@
 
 <ul class="flex flex-col">
     {#each $tasks as task, index}
-    <li>
-        <Task {...task} index={index} />
-    </li>
+        <li>
+            <Task {...task} index={index} />
+        </li>
     {/each}
 </ul>
