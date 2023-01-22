@@ -6,7 +6,7 @@
     export let index: number;
 
     function remove() {
-        tasks.update(tasks => tasks.filter((item, arrayIndex) => arrayIndex !== index))
+        tasks.update(tasks => tasks.filter((_item, arrayIndex) => arrayIndex !== index))
     }
 
     function update() {

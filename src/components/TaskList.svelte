@@ -8,5 +8,9 @@
         <li>
             <Task {...task} index={index} />
         </li>
+    {:else}
+        <li>
+            <p class="text-center text-2xl text-amber-400">No hay tareas, ¡apunta una!</p>
+        </li>
     {/each}
 </ul>
